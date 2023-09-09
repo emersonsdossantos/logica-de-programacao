@@ -2,6 +2,7 @@ package cursoLogicaCapitulo03;
 
 public class TiposNumericos {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		Byte numeroByte = 127; // -128 até 127
 		

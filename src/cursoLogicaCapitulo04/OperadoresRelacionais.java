@@ -1,6 +1,6 @@
 package cursoLogicaCapitulo04;
 
-public class OperadoresRealcionais {
+public class OperadoresRelacionais {
 
 	public static void main(String[] args) {
 		Boolean tresMaiorQueTres = 3 > 3;

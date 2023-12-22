@@ -18,8 +18,10 @@ public class UtilizandoIfEncadeado {
 			System.out.println("O lutador é peso Leve");
 		} else if (pesoMedio){
 			System.out.println("O lutador é peso Medio");
-		} else {
+		} else if (pesoPesado){
 			System.out.println("O lutador é peso Pesado");
+		} else {
+			System.out.println("O lutador nao se encaixa em categoria alguma.");
 		}
 		
 		scanner.close();

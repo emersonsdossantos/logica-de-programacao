@@ -1,7 +1,5 @@
 package cursoLogicaCapitulo06;
 
-import java.util.Iterator;
-
 public class IteracaoFor {
 
 	public static void main(String[] args) {

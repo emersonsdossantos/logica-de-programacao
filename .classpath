@@ -11,5 +11,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="cursoLogicaCapitulo11/libs/commons-email-1.4.jar"/>
 	<classpathentry kind="lib" path="cursoLogicaCapitulo11/libs/javax.mail.jar"/>
+	<classpathentry kind="lib" path="cursoLogicaCapitulo11/libs/console-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

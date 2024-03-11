@@ -5,32 +5,45 @@ public class AlgoritimoAvancado {
 	public static void main(String[] args) {
 		ListaAlunos lista = new ListaAlunos();
 		
-		Aluno aluno = new Aluno();
-		aluno.nome = "Joao";
-		lista.adicionar(aluno);
+		Aluno aluno1 = new Aluno();
+		aluno1.nome = "Joao";
+		lista.adicionar(aluno1);
 		
-		aluno = new Aluno();
-		aluno.nome = "Maria";
-		lista.adicionar(aluno);
+		Aluno aluno2 = new Aluno();
+		aluno2.nome = "Maria";
+		lista.adicionar(aluno2);
 		
-		aluno = new Aluno();
-		aluno.nome = "Pedro";
-		lista.adicionar(aluno);
+		Aluno aluno3 = new Aluno();
+		aluno3.nome = "Pedro";
+		lista.adicionar(aluno3);
 		
-		aluno = new Aluno();
-		aluno.nome = "Jose";
-		lista.adicionar(aluno);
+		Aluno aluno4 = new Aluno();
+		aluno4.nome = "Jose";
+		lista.adicionar(aluno4);
 		
-		aluno = new Aluno();
-		aluno.nome = "Antonio";
-		lista.adicionar(aluno);
+		Aluno aluno5 = new Aluno();
+		aluno5.nome = "Antonio";
+		lista.adicionar(aluno5);
 		
 		for (int i = 0; i < lista.tamanho(); i++) {
 			Aluno a = lista.obter(i);
-			System.out.println("aluno: " + a.nome);
-			
+			if (a != null) {
+				System.out.println("aluno: " + a.nome);	
+			}else {
+				System.out.println("Aluno invalido");
+			}
 		}
-
+		System.out.println("**********************************************************************");
+		
+		lista.remover(aluno3);
+		
+		for (int i = 0; i < lista.tamanho(); i++) {
+			Aluno a = lista.obter(i);
+			if (a != null) {
+				System.out.println("aluno: " + a.nome);	
+			}else {
+				System.out.println("Aluno invalido");
+			}
+		}
 	}
-
 }

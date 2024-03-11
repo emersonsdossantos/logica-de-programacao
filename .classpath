@@ -4,6 +4,7 @@
 	<classpathentry kind="src" path="cursoLogicaCapitulo09"/>
 	<classpathentry kind="src" path="cursoLogicaCapitulo10"/>
 	<classpathentry kind="src" path="cursoLogicaCapitulo11"/>
+	<classpathentry kind="src" path="cursoLogicaCapitulo12"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>

@@ -50,8 +50,35 @@ public class ListaAlunos {
 		lista[i- 1] = lista[i];
 		}
 		tamanhoLista--;
-		
 	}
 	
-
+	void ordenar() {
+		for(int i = 1; i < tamanhoLista; i++) {
+			Aluno alunoPosicaoBase = lista[i];
+			int indicePosicaoBase = i;
+			
+			while(indicePosicaoBase > 0) {
+				int indicePosicaoAnterior = indicePosicaoBase - 1;
+				Aluno alunoPosicaoAnterior = lista[indicePosicaoAnterior];
+				
+				Boolean alunoPosicaoAnteriorVemDepoisDe = alunoPosicaoAnterior == null
+						||alunoPosicaoAnterior.vemDepoisDe(alunoPosicaoBase);
+				if(alunoPosicaoAnteriorVemDepoisDe) {
+					lista[indicePosicaoBase] = lista[indicePosicaoAnterior];
+					
+					indicePosicaoBase--;
+				}else {
+					break;
+				}
+			}
+			
+			lista[indicePosicaoBase] = alunoPosicaoBase;
+		}
+	}
+	public static void main(String[] args) {
+		String nome2 = "Carlos";
+		String nome1 = "Douglas";
+		
+		System.out.println(nome1.compareTo(nome2));
+	} 
 }

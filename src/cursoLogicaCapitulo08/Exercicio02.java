@@ -10,7 +10,7 @@ public class Exercicio02 {
 		
 		imprimirTraco();
 		
-		String[] cursos = new String[] {"Java EE", "Spring", "Java 00 Avançado"};
+		String[] cursos = new String[] {"Java EE", "Spring", "Java 00 Avanï¿½ado"};
 		
 		imprimirTexto("Escolha dentre os cursos abaixo: ");
 		
@@ -20,11 +20,11 @@ public class Exercicio02 {
 		Integer posicaoCursoEscolhido = scanner.nextInt();
 		
 //		Boolean posicaoValida = posicaoCursoEscolhido >= 0 && posicaoCursoEscolhido < cursos.length;
-		validarETratarPosiçao(posicaoCursoEscolhido, cursos);
+		validarETratarPosicao(posicaoCursoEscolhido, cursos);
 		
 		imprimirTraco();
 		
-		String[] formaPagamento = new String[] {"Cartãoo", "Boleto"};
+		String[] formaPagamento = new String[] {"Cartï¿½oo", "Boleto"};
 		
 		imprimirTexto("Escolha a forma de Pagamento abaixo:");
 		
@@ -34,7 +34,7 @@ public class Exercicio02 {
 		Integer formaPagamentoEscolhida = scanner.nextInt();
 		
 //		posicaoValida = formaPagamentoEscolhida >= 0 && formaPagamentoEscolhida < formaPagamento.length;
-		validarETratarPosiçao(posicaoCursoEscolhido, formaPagamento);
+		validarETratarPosicao(posicaoCursoEscolhido, formaPagamento);
 		
 		String cursoEscolhido = cursos[posicaoCursoEscolhido];
 		String pagamentoEscolhido = formaPagamento[formaPagamentoEscolhida];
@@ -51,7 +51,7 @@ public class Exercicio02 {
 		System.out.println(texto);
 	}
 	
-	static void validarETratarPosiçao( Integer posicao, String[] vetor ) {
+	static void validarETratarPosicao( Integer posicao, String[] vetor ) {
 		boolean posicaoValida =  posicao >= 0 && posicao < vetor.length;
 		if (!posicaoValida) {
 			encerrarProgramaPorCausaDaPosicaoInvalida();
@@ -70,7 +70,7 @@ public class Exercicio02 {
 	}
 	
 	static void encerrarProgramaPorCausaDaPosicaoInvalida() {
-		System.err.println("Posiçao invalida");
+		System.err.println("Posiï¿½ao invalida");
 		System.exit(1);
 	}
 
